@@ -56,7 +56,7 @@ alert("Okay here's a new set of questions!");
 //This code is for question #3
 alert("Hello welcome to Codeup! we're going to try and see if we have room for you to attend class");
 let checkAvailability = prompt("First lets check availability, How many days out of the week are you available? ");
-// Returns a random integer from 0 to 29: this will determine how how many seats we have open
+// Returns a random integer from 0 to 29: this will determine how many seats we have open
 let seating = Math.floor(Math.random() * 30);
 // This shows that the random number must be under 20 && the days available for the meek must be a minimum of 3 days
 if (seating < 20 && checkAvailability >= 3)
@@ -64,16 +64,16 @@ if (seating < 20 && checkAvailability >= 3)
     alert("Welcome to Codeup, Happy to have you join us!");
     console.log("Welcome to Codeup");
 }
-// This will alert user that they didnt get accepted based of seating
+// This will alert user that they didn't get accepted based of seating
 else if  (seating > 20)
 {
     alert("We're so sorry but the class is full at the moment");
     console.log("Not accepted in, due to class size");
 }
-// This will alert user that they didnt get accepted based of days available
+// This will alert user that they didn't get accepted based of days available
 else if  (checkAvailability < 3)
 {
-    alert("Sorry but we need at least 3 days to be successful");
+    alert("Sorry but we need at least 3 days to be successful in this class");
     console.log('Not accepted in, due to your Availability');
 }
 
@@ -83,12 +83,13 @@ alert("Okay here's our last of questions I promise!");
 
 
 //This code is for question #4
+alert("Hello, Welcome to Sam's Club")
+// User will need to confirm they are a Premium Member
+let offerPremium = confirm('Press OK if you are a Premium Member.');
 // This will ask the user how many items they are buying
 let offer = prompt('How many items are you buying?');
 // User will need to confirm order
 let offerExpired = confirm('Press OK if offer still valid.');
-// User will need to confirm they are a Premium Member
-let offerPremium = confirm('Press OK if you are a Premium Member.');
 // If order is more then 2 or they are a Premium Member && they confirm order offer can be applied
 if ((offer > 2 || offerPremium) && offerExpired)
 {
