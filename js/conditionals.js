@@ -156,17 +156,17 @@ function calculateTotal(luckyNumber, total)
         case (luckyNumber = 2):
             finalPrice = total - (total * 0.1).toFixed();
             console.log("Hello, Congratulations you've been awarded a 25% discount");
-            return "Hello, Congratulations you've been awarded a 25% discount. You're new total is: $" + finalPrice
+            return "Hello, Congratulations you've been awarded a 25% discount. You're new total is: $" + finalPrice;
         // This result will happen if luckyNumber is 3
         case (luckyNumber = 3):
             finalPrice = total - (total * 0.35).toFixed();
             console.log("Hello, Congratulations you've been awarded a 35% discount");
-            return "Hello, Congratulations you've been awarded a 35% discount. You're new total is: $" + finalPrice
+            return "Hello, Congratulations you've been awarded a 35% discount. You're new total is: $" + finalPrice;
         // This result will happen if luckyNumber is 4
         case (luckyNumber = 4):
             finalPrice = total (total * 0.5).toFixed();
             console.log("Hello, Congratulations you've been awarded a 50% discount");
-            return "Hello, Congratulations you've been awarded a 50% discount. You're new total is: $" + finalPrice
+            return "Hello, Congratulations you've been awarded a 50% discount. You're new total is: $" + finalPrice;
         // This result will happen if luckyNumber is 5
         case (luckyNumber = 5):
             console.log("Hello, Congratulations your purchase is 100% FREE!!");
@@ -174,9 +174,9 @@ function calculateTotal(luckyNumber, total)
     }
 }
 
-// calculateTotal(0, 100) // returns 100
-// calculateTotal(3, 100) // returns 50
-// calculateTotal(5, 100) // returns 0
+console.log(calculateTotal(0, 100));
+console.log(calculateTotal(3, 100));
+console.log(calculateTotal(5, 100));
 
 /**
  * TODO:
@@ -212,6 +212,7 @@ function calculateTotal(luckyNumber, total)
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
 
 confirm("Hello, lets play a game. if you give me a number I can tell you if its Even/Positive or if it is Odd/Negative. I can even add another number to it & do the math correctly! You want to try?");
 // Prompting the user to input a number & using parseInt to convert it from string into a integer
