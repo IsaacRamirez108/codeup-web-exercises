@@ -1,5 +1,24 @@
 
 .fancy-header {
-    color: steelblue;
+    color: #4daaa7;
     text-decoration: underline;
+}
+
+.background {
+    background: #333333;
+}
+article{
+    color: white;
+}
+li{
+    color: white;
+}
+td{
+    color: white;
+}
+th{
+    color: white;
+}
+em{
+    color: white;
 }
