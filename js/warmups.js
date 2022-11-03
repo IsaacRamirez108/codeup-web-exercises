@@ -1,32 +1,32 @@
 (function() {
-    "use strict";
-let obj = {
-    Location: 'San Antonio',
-    Price: '$200,000',
-    // getPrice: function(){
-    //     return "Your total home price is " + obj.Price;
-    // }
-};
-    //console.log(obj.getPrice);
-    function getPrice(){
-        return "Your total home price is " + obj.Price;
-    }
- console.log(getPrice());
-
-
-    function thelongestStr(arr){
-        let longestStr = "";
-        for (let str of arr){
-            if(str.length > longestStr.length){
-                longestStr = str;
-            }
-        }
-        return longestStr;
-    }
-    const arr = ['Isaac', 'I', 'Isa', 'Is', 'Isaac Ramirez', 'Isaa'];
-    console.log(thelongestStr(arr));
-
-
+//     "use strict";
+// let obj = {
+//     Location: 'San Antonio',
+//     Price: '$200,000',
+//     // getPrice: function(){
+//     //     return "Your total home price is " + obj.Price;
+//     // }
+// };
+//     //console.log(obj.getPrice);
+//     function getPrice(){
+//         return "Your total home price is " + obj.Price;
+//     }
+//  console.log(getPrice());
+//
+//
+//     function thelongestStr(arr){
+//         let longestStr = "";
+//         for (let str of arr){
+//             if(str.length > longestStr.length){
+//                 longestStr = str;
+//             }
+//         }
+//         return longestStr;
+//     }
+//     const arr = ['Isaac', 'I', 'Isa', 'Is', 'Isaac Ramirez', 'Isaa'];
+//     console.log(thelongestStr(arr));
+//
+//
     const hamsters = [
         {
             name: "Hamtaro",
@@ -61,15 +61,32 @@ let obj = {
         }
     ];
 
-    function getTallestHampster(arr){
-        let tallest = {heightInMM: 0}
-        arr.forEach(function(el){
-            if(el.heightInMM > tallest.heightInMM){
-                tallest = el;
-            }
-        })
-    return tallest;
-    }
-    console.log(getTallestHampster(hamsters))
+
+//     function getTallestHampster(arr){
+//         let tallest = {heightInMM: 0}
+//         arr.forEach(function(el){
+//             if(el.heightInMM > tallest.heightInMM){
+//                 tallest = el;
+//             }
+//         })
+//     return tallest;
+//     }
+//     console.log(getTallestHampster(hamsters))
+
+    // function FizzBuzz(){
+    //     for (let i = 1; i <= 100; i++){
+    //         if (i % 3 == 0 && i % 5 == 0){
+    //             console.log("FizzBuzz") ;
+    //         } else if (i % 5 == 0){
+    //             console.log("Buzz");
+    //         }else if (i % 3 == 0){
+    //             console.log("Fizz");
+    //         }else
+    //             console.log(i);
+    //     }
+    // }
+    // console.log(FizzBuzz());
+
+
 
 })();
