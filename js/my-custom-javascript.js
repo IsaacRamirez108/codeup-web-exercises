@@ -19,6 +19,6 @@ $(function() {
     // let h1Alert = $('h1').html();
     // alert(h1Alert);
 
-    // Fourth JQuery Section Exercises
+    // Fourth JQuery Section Exercises testing
     $('h1, p, li').css('background-color', 'yellow');
 });
