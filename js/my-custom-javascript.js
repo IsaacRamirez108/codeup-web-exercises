@@ -1,10 +1,14 @@
 "use strict";
 
 $(function() {
-    let firstAlert = $('#Main-Header').html();
-    alert(firstAlert);
+    // First JQuery Section Exercises
+    // let firstAlert = $('#Main-Header').html();
+    // alert(firstAlert);
+    //
+    // let secondAlert = $('#Second-Header').html();
+    // alert(secondAlert);
 
-    let secondAlert = $('#Second-Header').html();
-    alert(secondAlert);
+    // Second JQuery Section Exercises
+    $('.codeup').css('border', '1px solid red');
 
 });
