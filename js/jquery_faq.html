@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>JQUERY FAQ EXERCISE</title>
+
+    <style>
+      dt{
+        font-weight: bold;
+        font-size: larger;
+      }
+      p{
+        font-weight: bold;
+        font-size: x-large;
+      }
+      .invisible{
+        visibility: hidden;
+      }
+    </style>
+
+  </head>
+  <body>
+
+  <p>10 FAQs about Yellow Stone national park.</p>
+
+
+  <h2>Notable Mentions</h2>
+  <h3 id="Park">Grand Canyon National Park</h3>
+  <ul id="national-parks">
+    <li class="Highlight">The Grand Canyon is bigger than the state of Rhode Island.</li>
+    <li class="Highlight">The Grand Canyon itself can influence the weather. </li>
+    <li class="Highlight">The Grand Canyon is one of the most visited national parks in the United States.</li>
+    <li class="Highlight">The most dangerous animal in the park is the rock squirrel.</li>
+  </ul>
+  <h3 class="Park">Olympic National Park</h3>
+  <ul>
+    <li class="Highlight"> Visitors can discover a hidden world in Olympic National Park’s tidepools</li>
+    <li class="Highlight">Olympic’s Hoh Rain Forest receives over 12 feet of rain a year. </li>
+    <li class="Highlight">Breaching whales make a big splash for park goers.</li>
+    <li class="Highlight">Lake Crescent’s waters are so pristine, visitors can see over 60 feet down into the lake.</li>
+  </ul>
+  <h3 class="Park">Grnad Teton National Park</h3>
+  <ul id="state-parks-texas">
+    <li class="Highlight">Evidence of the first human colonization of the Grand Tetons dates the first colonies back about 11,000 years.</li>
+    <li class="Highlight">The amazing, clear rivers and lakes of Grand Tetons are fed with water from glaciers.</li>
+    <li class="Highlight">More than 300 species of birds can be found in the park</li>
+    <li class="Highlight">Grand Teton National Park is the only park in The US with an airport inside of it. The Jackson Hole airport was established in 1930.</li>
+  </ul>
+
+  <br>
+
+  <dl>
+    <dt>Yellowstone encompasses 3,472 square miles (2,221,766 acres)</dt>
+    <dd class="invisible">which makes it larger than Rhode Island and Delaware combined.</dd>
+
+    <br>
+
+    <dt>There are more than 10,000 hydrothermal features in Yellowstone.</dt>
+    <dd class="invisible">The four types of thermal features are geysers, hot springs, mud pots, and fumaroles.</dd>
+
+    <br>
+
+    <dt>Yellowstone is home to more than 500 active geysers </dt>
+    <dd class="invisible">more than half the world’s geysers</dd>
+
+    <br>
+
+    <dt>Yellowstone Lake has 131.7 sq. miles of surface area and 141 miles of shoreline. </dt>
+    <dd class="invisible"> It is the largest high elevation lake in North America.</dd>
+
+    <br>
+
+    <dt>Yellowstone is home to the largest concentration of mammals in the lower 48 states</dt>
+    <dd class="invisible">67 species</dd>
+
+    <br>
+
+    <dt>285 species of birds can be found in Yellowstone </dt>
+    <dd class="invisible">150 nesting</dd>
+
+    <br>
+
+    <dt>Beyond its geysers, Yellowstone is world-renowned for its bison herds</dt>
+    <dd class="invisible">bison often causing traffic jams —nicknamed bison jams</dd>
+
+    <br>
+
+    <dt>Yellowstone is a supervolcano.</dt>
+    <dd class="invisible">The first major eruption of the Yellowstone volcano occurred 2.1 million years ago</dd>
+
+    <br>
+
+    <dt>Yellowstone has its own Grand Canyon.</dt>
+    <dd class="invisible"> the canyon is more than 1,000 feet deep, 1,500-4,000 feet wide and roughly 20 miles long</dd>
+
+    <br>
+
+    <dt>There Are Between 1,000 and 3,000 Earthquakes Annually</dt>
+    <dd class="invisible">the park is one of the most seismically active areas in the country</dd>
+  </dl>
+
+  <button class="styler" id="btn-1">Click me to Yellowstone last list item</button>
+  <button class="styler" id="btn-2">Click me to highlight the notable mentions list</button>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/my-custom-javascript.js"></script>
+  <script>
+    $("#btn-1").click(function(e) {
+      e.preventDefault();
+      $("dd").toggleClass("invisible");
+    });
+
+    // Highlights all li's when button is clicked
+    $("#btn-2").click(function(e) {
+      e.preventDefault();
+      $('li').parent().css('background-color', 'yellow');
+    });
+
+    // When any H3 is clicked changes all li's to bold
+    $('h3').click(function() {
+      $(this).next().css('font-weight', 'bold');
+    });
+
+    // Changes the first li of every ul to a Blue font color when any li is clicked
+    $('li').click(function() {
+      $('li').each(function (index) {
+        if (index === 0 || index === 4 || index === 8) {
+          $(this).css('color', 'blue');
+        }
+      });
+    });
+  </script>
+
+  </body>
+</html>
