@@ -30,5 +30,20 @@
             "tool"
         ],
         "price": 10
+    },  {
+        "title": "Table Saw",
+        "quantity": 2,
+        "categories": [
+            "tool",
+            "powered"
+        ],
+        "price": 500
+    },  {
+        "title": "Utility knife",
+        "quantity": 5,
+        "categories": [
+            "tool"
+        ],
+        "price": 10
     }
 ]
