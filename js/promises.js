@@ -1,21 +1,17 @@
- "use strict";
+"use Strict";
+
 (() => {
-
-    function getGithubUsernames() {
-        let userInput = prompt("Enter Username:")
-        //const getUserCommit= `/users/${username}/events/public`;
-        const getUserCommit = (username) => {
-            fetch(`http://api.github.com/users/${username}/events/public`, {headers: {'Authorization': `token ${gitHubToken}`}})
-                .then(response => response.json())
-        }
-
-
+    const userSearch = name => {
+        let gitHubApi = `https://api.github.com/users/${name}/events/public`;
+        fetch(gitHubApi, {headers: {'Authorization': GitHubKey}})
+            .then(response => response.json())
+            .then(data => {
+                const latestEntry = data.filter(event => event.type === "PushEvent");
+                console.log(`${name} most recent entry was on: ${latestEntry[0].created_at}.`);
+            })
+            .catch(error => console.log(error));
     }
-    console.log(getGithubUsernames)
+
+    userSearch('IsaacRamirez108')
 })();
-
-
-
-
-
 
